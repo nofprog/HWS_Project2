@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     var countries = [String]()
     var score = 0
+    var correctAnswer = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
         
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
-        //Aeetts内の画像の名前と同じ
+        //Aeetts内の画像の名前を格納
         
         button1.layer.borderWidth = 1.0
         button2.layer.borderWidth = 1.0
@@ -32,15 +33,26 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
                 
-        
+        //メソッドの呼び出し
         askQuestion()
     
     }
     
     func askQuestion(){
+        //値をシャッフル
+        countries.shuffle()
+        
+        //correctAnswerに0から2の整数をランダムに格納
+        correctAnswer = Int.random(in: 0...2)
+        
+        //buttonにcountriesの画像をセット
         button1.setImage(UIImage(named: countries[0]), for: .normal)
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
+        
+    
+        print(correctAnswer, ":", countries[correctAnswer])
+        
     }
 
 
