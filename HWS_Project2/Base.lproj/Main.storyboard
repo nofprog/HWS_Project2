@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jvl-M5-rAl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -16,26 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9Z-aS-QTx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9Z-aS-QTx">
                                 <rect key="frame" x="107" y="145" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kI-UL-7C4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kI-UL-7C4">
                                 <rect key="frame" x="107" y="286" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-7H-Xef">
-                                <rect key="frame" x="107" y="430" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-7H-Xef">
+                                <rect key="frame" x="107" y="421" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K9Z-aS-QTx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="6f2-2q-Yrc"/>
+                            <constraint firstItem="1kI-UL-7C4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="198" id="71A-C8-Fcx"/>
+                            <constraint firstItem="1kI-UL-7C4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U3m-ms-qy9"/>
+                            <constraint firstItem="JlN-7H-Xef" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aKo-gT-q7t"/>
+                            <constraint firstItem="JlN-7H-Xef" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="333" id="ayA-E2-Eee"/>
+                            <constraint firstItem="K9Z-aS-QTx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qHo-9S-PEV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lNm-aM-D1v"/>
+                    <connections>
+                        <outlet property="button1" destination="K9Z-aS-QTx" id="yYr-JS-Yxl"/>
+                        <outlet property="button2" destination="1kI-UL-7C4" id="ydI-6u-bvD"/>
+                        <outlet property="button3" destination="JlN-7H-Xef" id="rhi-7K-6FH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
