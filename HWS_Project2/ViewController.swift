@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     }
     
-    func askQuestion(action: UIAlertAction!){
+    func askQuestion(action: UIAlertAction! ){
         //値をシャッフル
         countries.shuffle()
         
